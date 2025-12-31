@@ -1,0 +1,1 @@
+lute run cli/command.luau -i test_src -o test_out --bake

@@ -223,4 +223,4 @@ setmetatable(api :: any, {
 	end,
 })
 
-return (api :: any) :: typeof(api) & (value: any) -> string
+return (api :: any) :: typeof(api) & (_: any, value: any) -> string

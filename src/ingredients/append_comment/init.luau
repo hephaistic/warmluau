@@ -7,7 +7,7 @@ type Opts = append_comment.Opts
 type Mode = append_comment.Mode
 
 -- Luau
-local function INSERT<Item>(tbl: { Item }, value: Item): ()
+local function INSERT<Item>(tbl: {Item}, value: Item): ()
 	table.insert(tbl, value)
 end
 
@@ -19,10 +19,7 @@ local function prepare_append_comment(opts: Opts): warmluau.PreparedIngredient<O
 		return {
 			tag = "comment",
 			text = opts.text,
-			location = {
-				begin = { column = 0, line = 0 },
-				["end"] = { column = 0, line = 0 },
-			},
+			location = luau.span.create({begincolumn = 7, beginline = 5, endcolumn = 40, endline = 5})
 		}
 	end
 

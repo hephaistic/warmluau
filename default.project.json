@@ -1,0 +1,55 @@
+{
+  "name": "Grandma's Footsteps",
+  "tree": {
+    "$className": "DataModel",
+    "$ignoreUnknownInstances": true,
+    "ReplicatedFirst" : {
+      "$ignoreUnknownInstances": true,
+
+      "client": {"$path": "dist/client_init"}
+    },
+    
+    "StarterPlayer": {
+      "$ignoreUnknownInstances": true,
+
+      "StarterPlayerScripts": {
+        "PlayerModule": {"$path": "dist/player_module"},
+        "$ignoreUnknownInstances": true
+      }
+    },
+
+    "Workspace": {
+      "$ignoreUnknownInstances": true,
+
+      "characters": {"$className": "Folder"},
+      "map_selection": {"$className": "Folder"},
+      "maps": {"$className": "Folder"},
+      "shop": {"$className":"Folder"}
+    },
+
+    "ReplicatedStorage": {
+      "$ignoreUnknownInstances": true,
+
+      "shared": {"$path": "dist/shared"},
+      "client": {"$path": "dist/client"},
+      "net": {"$path": "net/client"},
+      "Packages": {"$path": "Packages"},
+
+      "mannequin": {"$className": "Folder"},
+      "npcs": {"$className": "Folder"},
+
+      "ui": {"$className": "Folder"},
+      "maps": {"$className": "Folder"},
+      "animations": {"$className": "Folder"},
+      "weapons": {"$className": "Folder"}
+    },
+
+    "ServerScriptService": {
+      "$ignoreUnknownInstances": true,
+
+      "server": {"$path": "dist/server"},
+      "net": {"$path": "net/server"},
+      "ServerPackages": {"$path": "ServerPackages"}
+    }
+  }
+}

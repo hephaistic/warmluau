@@ -1,0 +1,1 @@
+lute run cli/analyze_roblox.luau
